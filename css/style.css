@@ -1,0 +1,58 @@
+:root {
+	--color-background: #000;
+	--color-text: #fff;
+	--color-links: #f00;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	background-color: var(--color-background);
+	color: var(--color-text);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	gap: 5rem;
+
+	margin: 0;
+	padding: 0;
+}
+
+body a, body a:visited, body a:hover, body a:active {
+	color: var(--color-links);
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	height: 20vh;
+	width: auto;
+}
+
+@media (min-width: 1024px) {
+	.logo {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+.home .logo {
+	height: 98vh;
+	width: auto;
+}
+
+.page-head {
+}
+
+.page-main {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.page-footer{
+	align-self: center;
+	justify-self: end;
+	padding: 2rem;
+}
