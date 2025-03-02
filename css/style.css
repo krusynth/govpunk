@@ -41,6 +41,7 @@ body a, body a:visited, body a:hover, body a:active {
 .home .logo {
 	height: 98vh;
 	width: auto;
+	max-width: 100vw
 }
 
 .page-head {
